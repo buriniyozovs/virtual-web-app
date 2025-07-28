@@ -5,11 +5,14 @@
     <meta charset="UTF-8" />
   </head>
   <body>
-    <h1>Hello from Telegram Web App!</h1>
+    <h1>Hello from Syclab Telegram Web App!</h1>
     <script>
       const tg = window.Telegram.WebApp
-      tg.expand() // Expand to full height
+      tg.expand()
+
       tg.MainButton.setText('Click me')
+      tg.MainButton.show()
+
       tg.MainButton.onClick(() => {
         tg.sendData('You clicked the button!')
       })
